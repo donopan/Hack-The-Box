@@ -31,9 +31,9 @@ def decipherBaconian(mcifrado, dictionary):
 	return Decipher
 
 cifrado = cipherBaconian("HOLA",Dictionary)
-print (cifrado)
+print ("Encrypting string \"HOLA\" --> "+cifrado)
 
-decifrado = decipherBaconian(cadena,Dictionary)
-print (decifrado)
+descifrado = decipherBaconian(cadena,Dictionary)
+print ("Deciphering string \""+cadena+"\" --> "+descifrado)
 
 
