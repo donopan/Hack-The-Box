@@ -9,7 +9,7 @@ for i in batman:
 	cadena+=i
 print(len(cadena))
 
-def chunk_str(str, chunk_size):
+def splitString(str, chunk_size):
 	return [str[i:i+chunk_size] for i in range(0, len(str), chunk_size)]
 
 print cadena
@@ -27,7 +27,7 @@ def cipherBaconian(mcla, dictionary):
 
 def decipherBaconian(mcifrado, dictionary):
 	Decipher=""	
-	mcifrado = chunk_str(mcifrado,5)
+	mcifrado = splitString(mcifrado,5)
 	for i in mcifrado:
 		for j in dictionary:
 			print j
